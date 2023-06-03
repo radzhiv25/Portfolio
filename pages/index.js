@@ -30,7 +30,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white p-5 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="bg-white p-5 md:px-20 lg:px-40 dark:bg-black">
         <section id="footer" className=" min-h-screen">
           <nav className="p-10 flex justify-between rounded-md">
             <h1 className="text-2xl font-semibold dark:text-white">Rajeev Krishna</h1>
@@ -43,7 +43,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bolder px-4 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bolder px-4 py-2 rounded-md ml-8 font-semibold"
                   href=""
                 >
                   Resume
@@ -51,7 +51,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
+          <div className="text-center mt-10 p-10">
             <h2 className="text-6xl py-2 text-teal-600 font-medium md:text-6xl">
               Rajeev Krishna
             </h2>
@@ -60,9 +60,9 @@ export default function Home() {
             </h3>
             <p className="text-md py-8 leading-7 text-gray-500 md:text-xl max-w-lg mx-auto">
               I am a Frontend Developer who has a keen knowledge of HTML, CSS
-              and Javascript. Also project based idea about SCSS/SASS and
+              and Javascript. Also hands-on experience of SCSS/SASS and
               TailwindCSS as I have projects based on that domain. Currently
-              learning ReactJs, Also this portfolio is the part of the same with
+              learning ReactJs, Also this portfolio is the part on the same with
               Nextjs which is a react based fullstack framework.
             </p>
           </div>
@@ -74,7 +74,7 @@ export default function Home() {
               <AiFillLinkedin className="hover:text-blue-700" />
             </a>
             <a href="https://github.com/radzhiv25">
-              <AiFillGithub className="hover:text-black" />
+              <AiFillGithub className="hover:text-black dark:hover:text-green-600" />
             </a>
             {/* <AiFillInstagram className= 'hover:text-pink-600'/> */}
           </div>
@@ -147,12 +147,14 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
+              <a href="https://radzhiv25.github.io/Projects/Calendar/index.html">
               <Image
                 src={Calendar}
                 className="rounded-lg object-cover border"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive" alt="" />
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
