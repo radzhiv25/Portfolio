@@ -44,7 +44,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bolder px-4 py-2 rounded-md ml-8 font-semibold"
-                  href=""
+                  href="https://radzhiv25.github.io/Projects/Resume/index.html"
                 >
                   Resume
                 </a>
@@ -82,7 +82,7 @@ export default function Home() {
             <Image src={peeps} layout="fill" alt=""/>
           </div>
         </section>
-        <section>
+        <section className="mt-10">
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Skills I offer </h3>
             <p className="text-md py-2 leading-7 text-gray-400">
@@ -93,42 +93,46 @@ export default function Home() {
               programming.
             </p>
           </div>
-          <div className="lg:flex gap-10">
-            <div className="shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image src={design} width={100} height={100} className="flex justify-center" alt=""/>
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
+          <div className="lg:flex gap-10 text-center">
+            <div className="shadow-lg p-5 rounded-xl my-10 dark:bg-white">
+              <Image src={design} width={100} height={100} alt="" className="relative left-1/3"/>
+              <h3 className="text-lg font-medium pt-5 pb-2 ">
                 Beautiful Designs
               </h3>
               <p className="py-2">
                 Elegant designs suited for your needs and design theory.
               </p>
-              <h4 className="py-4 text-teal-400">Design tools i use</h4>
+              <h4 className="py-4 text-teal-400">Design tools I use</h4>
               <p className="text-gray-800 py-1">Figma</p>
               <p className="text-gray-800 py-1">Adobe XD</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image src={code} width={100} height={100} alt=""/>
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Beautiful Designs
+            <div className="shadow-lg p-5 rounded-xl my-10 dark:bg-white">
+              <Image src={code} width={100} height={100} alt="" className="relative left-1/3"/>
+              <h3 className="text-lg font-medium pt-5 pb-2 ">
+                Programming
               </h3>
               <p className="py-2">
-                Elegant designs suited for your needs and design theory.
+                Programming basics as an undergrad.
               </p>
-              <h4 className="py-4 text-teal-400">Design tools i use</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Adobe XD</p>
+              <h4 className="py-4 text-teal-400">Languages I use for programming</h4>
+              <p className="text-gray-800 py-1">C</p>
+              <p className="text-gray-800 py-1">C++</p>
+              <p className="text-gray-800 py-1">Java</p>
+              <p className="text-gray-800 py-1">Javascript</p>
+              {/* <p className="text-gray-800 py-1">C++</p> */}
             </div>
-            <div className="text-right shadow-lg p-10 rounded-xl my-10 dark:bg-white sm:text-center">
-              <Image src={consulting} width={100} height={100} alt=""/>
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Beautiful Designs
+            <div className="shadow-lg p-5 rounded-xl my-10 dark:bg-white">
+              <Image src={consulting} width={100} height={100} alt="" className="relative left-1/3"/>
+              <h3 className="text-lg font-medium pt-5 pb-2 ">
+                Coding of Design
               </h3>
               <p className="py-2">
-                Elegant designs suited for your needs and design theory.
+                The Design being implemented as proper website.
               </p>
-              <h4 className="py-4 text-teal-400">Design tools i use</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Adobe XD</p>
+              <h4 className="py-4 text-teal-400">Lirbraries and Frameworks I use</h4>
+              <p className="text-gray-800 py-1">React</p>
+              <p className="text-gray-800 py-1">Next</p>
+              <p className="text-gray-500 py-1">TailwindCSS</p>
             </div>
           </div>
         </section>
