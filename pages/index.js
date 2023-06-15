@@ -44,7 +44,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bolder px-4 py-2 rounded-md ml-8 font-semibold"
-                  href="https://radzhiv25.github.io/Projects/Resume/index.html"
+                  href="https://drive.google.com/file/d/15V1nL_uioOhEuiFRXgWgJn7Oa9l4yT5w/view?usp=sharing"
                 >
                   Resume
                 </a>
@@ -86,8 +86,8 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Skills I offer </h3>
             <p className="text-md py-2 leading-7 text-gray-400">
-              Since the beginning of my college studies i had started as a
-              Frontend Developer and i have been making clone of{" "}
+              Since the beginning of my college studies I had started as a
+              Frontend Developer and I have been making clone of{" "}
               <span className="text-teal-400">certain websites.</span>
               <br />I offer a wide range of services, including design and
               programming.
@@ -132,7 +132,7 @@ export default function Home() {
               <h4 className="py-4 text-teal-400">Lirbraries and Frameworks I use</h4>
               <p className="text-gray-800 py-1">React</p>
               <p className="text-gray-800 py-1">Next</p>
-              <p className="text-gray-500 py-1">TailwindCSS</p>
+              <p className="text-gray-800 py-1">TailwindCSS</p>
             </div>
           </div>
         </section>
@@ -141,10 +141,10 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white">Projects</h3>
             <div>
               <p className="text-md py-2 leading-7 text-gray-400">
-                Since the beginning of my college studies i had started as a
+                Since the beginning of my college studies I had started as a
                 Frontend Developer and i have been making clone of{" "}
                 <span className="text-teal-400">certain websites.</span>
-                <br />I offer a wide range of services, icluding design and
+                <br />I offer a wide range of services, including design and
                 programming.
               </p>
             </div>
@@ -195,7 +195,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={web6}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover border"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive" alt="" />
