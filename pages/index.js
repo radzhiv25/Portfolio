@@ -14,9 +14,7 @@ import consulting from "../public/consulting.png";
 import Calendar from "../public/CalendarDesign.png";
 import SignUp from "../public/SignUp.png";
 import LandingPage from "../public/LandingPage.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import BlogNode from "../public/astro-blog-node.png";
 import { useState } from "react";
 import NextLink from "next/link";
 
@@ -30,8 +28,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white p-5 md:px-20 lg:px-40 dark:bg-black">
-        <section id="footer" className=" min-h-screen">
+      <main className="p-5 md:px-20 lg:px-40 dark:bg-black">
+        <section id="footer" className="min-h-screen">
           <nav className="p-10 flex justify-between rounded-md">
             <h1 className="text-2xl font-semibold dark:text-white">Rajeev Krishna</h1>
             <ul className="flex items-center">
@@ -39,11 +37,11 @@ export default function Home() {
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer text-2xl dark:text-white"
-                />
+               />
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bolder px-4 py-2 rounded-md ml-8 font-semibold"
+                  className="font-bolder bg-gradient-to-r from-teal-200 to-fuchsia-200 px-4 py-2 rounded-md ml-8 font-semibold shadow-md dar:shadow-slate-400"
                   href="https://drive.google.com/file/d/15V1nL_uioOhEuiFRXgWgJn7Oa9l4yT5w/view?usp=sharing"
                 >
                   Resume
@@ -55,15 +53,15 @@ export default function Home() {
             <h2 className="text-6xl py-2 text-teal-600 font-medium md:text-6xl">
               Rajeev Krishna
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
-              Frontend Developer and a Student
+            <h3 className="text-3xl py-2 md:text-4xl dark:text-white">
+            Frontend Developer
             </h3>
-            <p className="text-md py-8 leading-7 text-gray-500 md:text-xl max-w-lg mx-auto">
+            <h4 className="mt-5 text-xl font-semibold">About me</h4>
+            <p className="text-md py-2 leading-7 text-gray-500 md:text-xl max-w-lg mx-auto">
               I am a Frontend Developer who has a keen knowledge of HTML, CSS
-              and Javascript. Also hands-on experience of SCSS/SASS and
-              TailwindCSS as I have projects based on that domain. Currently
-              learning ReactJs, Also this portfolio is the part on the same with
-              Nextjs which is a react based fullstack framework.
+              and Javascript. Also hands-on experience with SCSS/SASS and
+              TailwindCSS as I have projects based on that. Currently
+              learning ReactJs and NextJS and this portfolio is the part on the same with NextJs which is a react based fullstack framework.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-10 text-gray-500">
@@ -84,7 +82,7 @@ export default function Home() {
         </section>
         <section className="mt-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Skills I offer </h3>
+            <h3 className="text-3xl font-semibold py-1 dark:text-white">Skills I offer </h3>
             <p className="text-md py-2 leading-7 text-gray-400">
               Since the beginning of my college studies I had started as a
               Frontend Developer and I have been making clone of{" "}
@@ -93,52 +91,60 @@ export default function Home() {
               programming.
             </p>
           </div>
-          <div className="lg:flex gap-10 text-center">
-            <div className="shadow-lg p-5 rounded-xl my-10 dark:bg-white">
+          <div className="lg:grid grid-cols-3 gap-10 text-center">
+            <div className="shadow-lg p-5 rounded-xl my-10 dark:bg-slate-900 hover:scale-105">
               <Image src={design} width={100} height={100} alt="" className="relative left-1/3"/>
-              <h3 className="text-lg font-medium pt-5 pb-2 ">
+              <h3 className="text-xl font-medium pt-5 pb-2 dark:text-teal-200">
                 Beautiful Designs
               </h3>
-              <p className="py-2">
+              <p className="py-2 dark:text-teal-50">
                 Elegant designs suited for your needs and design theory.
               </p>
-              <h4 className="py-4 text-teal-400">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Adobe XD</p>
+              <h4 className="py-4 text-teal-400">Tools I use daily</h4>
+              <ul className="tools space-y-1 dark:text-white" >
+              <li>VS Code</li>
+              <li>GitHub</li>
+              <li>Figma</li>
+              <li>Adobe XD</li>
+              </ul>
             </div>
-            <div className="shadow-lg p-5 rounded-xl my-10 dark:bg-white">
+            <div className="shadow-lg p-5 rounded-xl my-10 dark:bg-slate-900 hover:scale-105">
               <Image src={code} width={100} height={100} alt="" className="relative left-1/3"/>
-              <h3 className="text-lg font-medium pt-5 pb-2 ">
+              <h3 className="text-lg font-medium pt-5 pb-2 dark:text-teal-200">
                 Programming
               </h3>
-              <p className="py-2">
+              <p className="py-2 dark:text-teal-50">
                 Programming basics as an undergrad.
               </p>
               <h4 className="py-4 text-teal-400">Languages I use for programming</h4>
-              <p className="text-gray-800 py-1">C</p>
-              <p className="text-gray-800 py-1">C++</p>
-              <p className="text-gray-800 py-1">Java</p>
-              <p className="text-gray-800 py-1">Javascript</p>
-              {/* <p className="text-gray-800 py-1">C++</p> */}
+              <ul className="space-y-1 dark:text-white">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>C++</li>
+              </ul>
             </div>
-            <div className="shadow-lg p-5 rounded-xl my-10 dark:bg-white">
+            <div className="shadow-lg p-5 rounded-xl my-10 dark:bg-slate-900 hover:scale-105">
               <Image src={consulting} width={100} height={100} alt="" className="relative left-1/3"/>
-              <h3 className="text-lg font-medium pt-5 pb-2 ">
+              <h3 className="text-lg font-medium pt-5 pb-2 dark:text-teal-200">
                 Coding of Design
               </h3>
-              <p className="py-2">
+              <p className="py-2 dark:text-teal-50">
                 The Design being implemented as proper website.
               </p>
               <h4 className="py-4 text-teal-400">Lirbraries and Frameworks I use</h4>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">Next</p>
-              <p className="text-gray-800 py-1">TailwindCSS</p>
+              <ul className="space-y-1 dark:text-white">
+                <li>TailwindCSS</li>
+                <li>React</li>
+                <li>Next</li>
+                <li>Astro</li>
+              </ul>
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Projects</h3>
+            <h3 className="text-3xl py-1 font-semibold dark:text-white">Projects</h3>
             <div>
               <p className="text-md py-2 leading-7 text-gray-400">
                 Since the beginning of my college studies I had started as a
@@ -154,7 +160,7 @@ export default function Home() {
               <a href="https://radzhiv25.github.io/Projects/Calendar/index.html">
               <Image
                 src={Calendar}
-                className="rounded-lg object-cover border"
+                className="rounded-lg object-cover border shadow-md hover:scale-105"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive" alt="" />
@@ -163,7 +169,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={SignUp}
-                className="rounded-lg object-cover border"
+                className="rounded-lg object-cover border shadow-md hover:scale-105"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive" alt=""/>
@@ -171,46 +177,32 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={LandingPage}
-                className="rounded-lg object-cover border"
+                className="rounded-lg object-cover border shadow-md hover:scale-105"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive" alt="" />
             </div>
             <div className="basis-1/3 flex-1">
+              <a href="https://astro-blog-node.vercel.app/">
               <Image
-                src={web4}
-                className="rounded-lg object-cover"
+                src={BlogNode}
+                className="rounded-lg object-cover shadow-md hover:scale-105"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive" alt="" />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web5}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive" alt="" />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web6}
-                className="rounded-lg object-cover border"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive" alt="" />
+              </a>
             </div>
           </div>
         </section>
         <section>
-          <div className="p-5 rounded-md">
-            <p className="text-center dark:text-white font-bold">
+          <div className="p-5 rounded-md text-center dark:text-white">
+            <p className="font-bold">
               <span>
-                <a href="#footer">Rajeev Krishna</a>
+                <a href="#footer">Rajeev Krishna </a>
               </span>
-              ©2023
+              © 2023
             </p>
-            <p className="mt-2 text-center dark:text-white">Created with NextJS and Tailwind 🚀</p>
+            <p className="mt-2">Created with NextJS and Tailwind 🚀</p>
           </div>
         </section>
       </main>
