@@ -42,7 +42,7 @@ export default function Home() {
               <li>
                 <a
                   className="font-bolder bg-gradient-to-r from-teal-200 to-fuchsia-200 px-4 py-2 rounded-md ml-8 font-semibold shadow-md dar:shadow-slate-400"
-                  href="https://drive.google.com/file/d/15V1nL_uioOhEuiFRXgWgJn7Oa9l4yT5w/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1Zxz5-aqpnUENfsCXMndn_ZJlimpeAev3/view?usp=drive_link"
                 >
                   Resume
                 </a>
