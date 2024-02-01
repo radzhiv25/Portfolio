@@ -5,6 +5,9 @@ import {
   AiFillLinkedin,
   AiFillGithub,
   AiFillInstagram,
+  AiOutlineArrowLeft,
+  AiOutlineRadiusUpleft,
+  AiOutlineArrowRight,
 } from "react-icons/ai";
 import Image from "next/image";
 import peeps from "../public/peeps-avatar-alpha.png";
@@ -31,7 +34,7 @@ export default function Home() {
       <main className="p-5 md:px-20 lg:px-40 dark:bg-black">
         <section id="footer" className="min-h-screen">
           <nav className="p-10 flex justify-between rounded-md">
-            <h1 className="text-2xl font-semibold dark:text-white">Rajeev Krishna</h1>
+            <h1 className="text-2xl font-semibold dark:text-white">rajeev krishna</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -41,7 +44,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="font-bolder bg-gradient-to-r from-teal-200 to-fuchsia-200 px-4 py-2 rounded-md ml-8 font-semibold shadow-md dar:shadow-slate-400"
+                  className="font-bolder bg-gradient-to-r from-teal-200 to-fuchsia-200 px-4 py-2 rounded-md ml-8 font-semibold dark:shadow-slate-400 hover:shadow-lg"
                   href="https://drive.google.com/file/d/1Zxz5-aqpnUENfsCXMndn_ZJlimpeAev3/view?usp=drive_link"
                 >
                   Resume
@@ -50,18 +53,14 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center mt-10 p-10">
-            <h2 className="text-6xl py-2 text-teal-600 font-medium md:text-6xl">
-              Rajeev Krishna
+            <h2 className="text-6xl py-2 font-semibold text-teal-600 font-medium md:text-6xl">
+              rajeev krishna
             </h2>
             <h3 className="text-3xl py-2 md:text-4xl dark:text-white">
-            Frontend Developer
+            frontend engineer
             </h3>
-            <h4 className="mt-5 text-xl font-semibold">About me</h4>
-            <p className="text-md py-2 leading-7 text-gray-500 md:text-xl max-w-lg mx-auto">
-              I am a Frontend Developer who has a keen knowledge of HTML, CSS
-              and Javascript. Also hands-on experience with SCSS/SASS and
-              TailwindCSS as I have projects based on that. Currently
-              learning ReactJs and NextJS and this portfolio is the part on the same with NextJs which is a react based fullstack framework.
+            <p className="my-10 text-md py-2 leading-7 text-gray-500 md:text-xl max-w-lg mx-auto">
+              an aspiring frontend engineer with a passion for css and zest for TailwindCSS. with a keen interest in design and development and hands-on experience using Figma and Webflow for UI/UX and no-code tools.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-10 text-gray-500">
@@ -82,8 +81,8 @@ export default function Home() {
         </section>
         <section className="mt-10">
           <div>
-            <h3 className="text-3xl font-semibold py-1 dark:text-white">Skills I offer </h3>
-            <p className="text-md py-2 leading-7 text-gray-400">
+            <h3 className="text-3xl font-semibold py-1 dark:text-white text-center">Skills I offer </h3>
+            <p className="text-md py-2 leading-7 text-gray-400 text-center ">
               Since the beginning of my college studies I had started as a
               Frontend Developer and I have been making clone of{" "}
               <span className="text-teal-400">certain websites.</span>
@@ -144,9 +143,9 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 font-semibold dark:text-white">Projects</h3>
+            <h3 className="text-center text-3xl py-1 font-semibold dark:text-white">Projects</h3>
             <div>
-              <p className="text-md py-2 leading-7 text-gray-400">
+              <p className="text-center text-md py-2 leading-7 text-gray-400">
                 Since the beginning of my college studies I had started as a
                 Frontend Developer and i have been making clone of{" "}
                 <span className="text-teal-400">certain websites.</span>
@@ -155,8 +154,8 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 py-10">
+            <div className="">
               <a href="https://radzhiv25.github.io/Projects/Calendar/index.html">
               <Image
                 src={Calendar}
@@ -166,7 +165,7 @@ export default function Home() {
                 layout="responsive" alt="" />
               </a>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="">
               <Image
                 src={SignUp}
                 className="rounded-lg object-cover border shadow-md hover:scale-105"
@@ -174,7 +173,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive" alt=""/>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="">
               <Image
                 src={LandingPage}
                 className="rounded-lg object-cover border shadow-md hover:scale-105"
@@ -182,7 +181,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive" alt="" />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="">
               <a href="https://astro-blog-node.vercel.app/">
               <Image
                 src={BlogNode}
