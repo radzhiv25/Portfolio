@@ -202,7 +202,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Analytics />
+      <Analytics mode={'production'}/>
     </div>
   );
 }
