@@ -1,13 +1,10 @@
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react"
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
-  AiFillGithub,
-  AiFillInstagram,
-  AiOutlineArrowLeft,
-  AiOutlineRadiusUpleft,
-  AiOutlineArrowRight,
+  AiFillGithub
 } from "react-icons/ai";
 import Image from "next/image";
 import peeps from "../public/peeps-avatar-alpha.png";
@@ -19,7 +16,7 @@ import SignUp from "../public/SignUp.png";
 import LandingPage from "../public/LandingPage.png";
 import BlogNode from "../public/astro-blog-node.png";
 import { useState } from "react";
-import NextLink from "next/link";
+// import NextLink from "next/link";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -205,6 +202,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Analytics />
     </div>
   );
 }
