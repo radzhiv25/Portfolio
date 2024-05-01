@@ -16,6 +16,7 @@ import SignUp from "../public/SignUp.png";
 import LandingPage from "../public/LandingPage.png";
 import BlogNode from "../public/astro-blog-node.png";
 import { useState } from "react";
+import Rajeev from "../public/Raj.JPG"
 // import NextLink from "next/link";
 
 export default function Home() {
@@ -31,7 +32,7 @@ export default function Home() {
       <main className="p-5 md:px-20 lg:px-40 dark:bg-black">
         <section id="footer" className="min-h-screen">
           <nav className="p-10 flex justify-between rounded-md">
-            <h1 className="text-2xl font-semibold dark:text-white">rajeev krishna</h1>
+            <h1 className="text-2xl font-semibold dark:text-white">Rajeev krishna</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -41,8 +42,8 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="font-bolder bg-gradient-to-r from-teal-200 to-fuchsia-200 px-4 py-2 rounded-md ml-8 font-semibold dark:shadow-slate-400 hover:shadow-lg"
-                  href="https://drive.google.com/file/d/1Zxz5-aqpnUENfsCXMndn_ZJlimpeAev3/view?usp=drive_link"
+                  className="font-bolder text-white bg-gradient-to-r from-teal-500 to-green-400 px-4 py-2 rounded-md ml-8 font-semibold dark:shadow-slate-400 hover:shadow-lg"
+                  href="https://drive.google.com/file/d/1nLb3jIdjcND4ijS2aJKAkwwV7Adkv_Dy/view?usp=sharing"
                 >
                   Resume
                 </a>
@@ -50,14 +51,14 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center mt-10 p-10">
-            <h2 className="text-6xl py-2 font-semibold text-teal-600 font-medium md:text-6xl">
-              rajeev krishna
+            <h2 className="text-6xl py-2 font-semibold bg-gradient-to-r from-teal-500 to-green-400 text-transparent bg-clip-text font-medium md:text-6xl">
+              Rajeev Krishna
             </h2>
             <h3 className="text-3xl py-2 md:text-4xl dark:text-white">
             frontend engineer
             </h3>
             <p className="my-10 text-md py-2 leading-7 text-gray-500 md:text-xl max-w-lg mx-auto">
-              an aspiring frontend engineer with a passion for css and zest for TailwindCSS. with a keen interest in design and development and hands-on experience using Figma and Webflow for UI/UX and no-code tools.
+              An aspiring frontend engineer with a passion for css and zest for TailwindCSS. with a keen interest in design and development and hands-on experience using Figma and Webflow for UI/UX and no-code tools.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-10 text-gray-500">
@@ -72,8 +73,8 @@ export default function Home() {
             </a>
             {/* <AiFillInstagram className= 'hover:text-pink-600'/> */}
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={peeps} layout="fill" alt=""/>
+          <div className="mx-auto rounded-full w-80 h-80 mt-20 md:h-96 md:w-96">
+            <Image src={Rajeev} layout="fill" alt="" className="rounded-md"/>
           </div>
         </section>
         <section className="mt-10">
@@ -81,8 +82,7 @@ export default function Home() {
             <h3 className="text-3xl font-semibold py-1 dark:text-white text-center">Skills I offer </h3>
             <p className="text-md py-2 leading-7 text-gray-400 text-center ">
               Since the beginning of my college studies I had started as a
-              Frontend Developer and I have been making clone of{" "}
-              <span className="text-teal-400">certain websites.</span>
+              Frontend Developer and I have been making clone of websites{" "}
               <br />I offer a wide range of services, including design and
               programming.
             </p>
@@ -144,8 +144,7 @@ export default function Home() {
             <div>
               <p className="text-center text-md py-2 leading-7 text-gray-400">
                 Since the beginning of my college studies I had started as a
-                Frontend Developer and i have been making clone of{" "}
-                <span className="text-teal-400">certain websites.</span>
+                Frontend Developer and i have been making clone of websites{" "}
                 <br />I offer a wide range of services, including design and
                 programming.
               </p>
@@ -196,7 +195,7 @@ export default function Home() {
               <span>
                 <a href="#footer">Rajeev Krishna </a>
               </span>
-              © 2023
+              © 2024
             </p>
             <p className="mt-2">Created with NextJS and Tailwind 🚀</p>
           </div>
